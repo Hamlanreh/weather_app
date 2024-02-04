@@ -41,7 +41,7 @@ export default function ThemeToggle() {
 
     return (
         <>
-            <button key="themeToggle" onClick={toggleTheme}>{buttonIcon(theme)}</button>
+            <button key="themeToggle" className="order-1 sm:order-3 ml-auto sm:ml-0 mb-6 sm:mb-0" onClick={toggleTheme}>{buttonIcon(theme)}</button>
         </>
     )
 }

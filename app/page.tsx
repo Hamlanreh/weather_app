@@ -29,8 +29,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen px-8 py-4">    
-      <header className="flex justify-between items-center py-4 mb-4">
-        <form onSubmit={handleSubmit} className="flex justify-between items-center">
+      <header className="flex flex-col sm:flex-row justify-between items-center py-4 mb-4">
+        <form onSubmit={handleSubmit} className="flex justify-between items-center order-2 sm:order-1">
           <input 
             type="search" 
             placeholder="Your Location..." 
@@ -40,7 +40,7 @@ export default function Home() {
           />
           <button type="submit" className="bg-black dark:bg-gray-700 text-white text-center font-bold py-2 px-6 rounded-sm shadow-sm">Search</button>
         </form>
-        <h1 className="hidden md:block font-bold text-lg uppercase">Weather App</h1>
+        <h1 className="hidden md:block font-bold text-lg uppercase order-1 sm:order-2">Weather App</h1>
         <ThemeToggle />
       </header>
 
