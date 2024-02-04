@@ -30,7 +30,7 @@ export default function ThemeToggle() {
 
 
     useEffect(() => {
-        const root: Element | null =  document.querySelector(':root');
+        const root: any =  document.querySelector(':root');
         root.dataset.theme = ( theme ?? defaultTheme() );
         localStorage.setItem( 'theme', ( theme ?? defaultTheme() ) );
         setTheme( theme ?? defaultTheme() );
