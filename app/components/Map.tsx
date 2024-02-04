@@ -5,7 +5,7 @@ import "leaflet-defaulticon-compatibility";
 import { useWeatherContext } from "@context/WeatherProvider";
 
 export default function Map() {
-  const { positionCoord, weather } = useWeatherContext();
+  const { positionCoord, weather }: any = useWeatherContext();
 
   return (
     <MapContainer
